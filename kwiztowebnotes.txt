@@ -1,0 +1,15 @@
+flip effect :
+https://codepen.io/desandro/pen/LmWoWe
+
+https://3dtransforms.desandro.com/
+detect swipe left 
+https://stackoverflow.com/questions/2264072/detect-a-finger-swipe-through-javascript-on-the-iphone-and-android
+
+slide out
+http://jsfiddle.net/jPneT/2705/
+
+https://developers.google.com/pay/india/api/web/user-readiness
+
+https://proto.school/
+
+https://ipfs.io/#install

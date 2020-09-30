@@ -1,0 +1,58 @@
+.card{
+  position:absolute;
+  width:100%;
+  height:100%;
+  line-height:150px;
+  text-align:center;
+   border:2px solid #555;
+  border-radius: 5px;
+  background-color:lightblue;
+  -webkit-backface-visibility: hidden;
+}
+.cardcontainer{
+    width:100%;
+  height:100%;
+  /*transition: transform 1s;
+  transform-style: preserve-3d;*/
+  transform:rotateY(70deg);
+}
+#back{
+/*   initially rotate back to hide it */
+  transform:rotateY(180deg);
+  background-color: lightblue;
+}
+.flipme{
+  transform:rotateY(180deg);
+}
+body{
+  
+  font-family:sans-serif;
+}
+h1{
+  text-align:center;
+}
+.carousel{
+  width:350px;
+  height:150px;
+margin: 0 auto;
+
+}
+.scene{
+  perspective:1000px;
+}
+.carousel-cell{
+   width: 100%;
+  
+}
+.carousel-cell:before {
+  display: block;
+   border-style: none;
+ 
+}
+.flickity-page-dots{
+  display:none;
+}
+.flickity-prev-next-button{
+  top:150%;
+}
+* { box-sizing: border-box; }
