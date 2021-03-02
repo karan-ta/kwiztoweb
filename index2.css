@@ -26,9 +26,7 @@ left:28%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 margin-top: 7%;
- 
-
-}
+ }
 .back{
 /*   initially rotate back to hide it */
   transform:rotateY(180deg);
@@ -38,13 +36,11 @@ margin-top: 7%;
 }
 .moveme{
   transform:translateX(550px) scaleX(0) scaleY(0);
-
 }
 body{
   perspective:1000px;
   font-family:sans-serif;
   font-size: 2em;
-
 }
 
 

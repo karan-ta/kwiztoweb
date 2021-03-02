@@ -1,0 +1,26 @@
+body{
+    font-family:arial;
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  .spanwidth{
+      width:7%;
+      
+  }
+  .pullleft{
+      float:left;
+  }
+  .width7{
+   width:25%;
+  }
+  #proofstatements{
+      width:50%;
+      border-right:2px solid #ccc;
+  }
+  #proofreasons{
+    width:45%;
+    margin-left:7px;
+  }
+  .smallertext{
+      font-size: 0.8em;
+  }

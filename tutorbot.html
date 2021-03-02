@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tutorbot</title>
+    <link rel="stylesheet" href="tutorbot.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jsxgraph.css" />
+    <link rel="stylesheet" type="text/css" href="tutorbot.css" />
+    <script type="text/javascript" src="jsxgraphcore.js"></script>
+</head>
+<body>
+<div id="box" style="float:left;width:400px; height:400px;"></div>
+<div id = "solutionbox" style= "width:40%;float:left;margin-left:7%;border:1px solid red;">
+<div class = "pullleft width7">
+    Given:
+</div>
+<div class = "pullleft">
+    ABCD is a parallelogram
+</div>
+<br/>
+<div class = "pullleft width7">
+    To Prove:
+</div>
+<div class = "pullleft">
+    ABCD is a rhombus
+</div>
+<br/><br/>
+<div class = "pullleft width7">
+    Proof:
+</div>
+<br/><br/>
+<div  id = "proofstatements" class = "pullleft">
+    AB = CD 
+    <br/>
+    and<br/> AD = BC 
+    <br/>
+    <span class = "smallertext">
+    So we need to prove that adjacent sides of ABCD are equal as well.
+    if we prove that AB = AD and CD = CB then all sides of ABCD are equal
+    and ABCD will be proved to be rhombus.
+</span>
+    <br/> 
+    AB = AP + PB 
+    <br/>
+    AD = AS + 
+</div>
+<div  id = "proofreasons" class = "pullleft">
+opposite sides of parallelogram ABCD
+</div>
+</div>
+<!-- solutionbox ends above  -->
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('box',{axis:false, showNavigation:false, showCopyright:false});
+var center = board.create('point', [0.0, 0.0],{name:'O'});
+var circle = board.create('circle', [center, 3]);
+var r = board.create('glider', [0.0,-3.0,circle],{name:'R'});
+var q = board.create('glider', [3.0,0.0,circle],{name:'Q'});
+var p = board.create('glider', [0.0,3.0,circle],{name:'P'});
+var s = board.create('glider', [-3.0,0.0,circle],{name:'S'});
+var t1 = board.create('tangent', [p]);
+var t2 = board.create('tangent', [q]);
+var t3 = board.create('tangent', [r]);
+var t4 = board.create('tangent', [s]);
+var a = board.create('point', [-3.0, 3.0],{name:'A'});
+var b = board.create('point', [3.0, 3.0],{name:'B'});
+var c = board.create('point', [3.0, -3.0],{name:'C'});
+var d = board.create('point', [-3.0,-3.0],{name:'D'});
+var l1 = board.create('segment', [p, r]);
+var l2 = board.create('segment', [b, d]);
+</script>
+</body>
+</html>    
