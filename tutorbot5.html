@@ -127,22 +127,35 @@ Points A,P,B are collinear.<br/>
 <!-- solutionbox ends above  -->
 <script type="text/javascript">
 var board = JXG.JSXGraph.initBoard('box',{axis:false, showNavigation:false, showCopyright:false});
-var center = board.create('point', [0.0, 0.0],{name:'O'});
-var circle = board.create('circle', [center, 3]);
-var r = board.create('glider', [0.0,-3.0,circle],{name:'R'});
-var q = board.create('glider', [3.0,0.0,circle],{name:'Q'});
+var o = board.create('point', [0.0, 0.0],{name:'O'});
+var circle = board.create('circle', [o, 3]);
 var p = board.create('glider', [0.0,3.0,circle],{name:'P'});
-var s = board.create('glider', [-3.0,0.0,circle],{name:'S'});
+var q = board.create('glider', [0.0,-3.0,circle],{name:'Q'});
+var l1 = board.create('segment', [p, q]);
+var c = board.create('glider', [3.0,-0.2,circle],{name:'C'});
 var t1 = board.create('tangent', [p]);
 var t2 = board.create('tangent', [q]);
-var t3 = board.create('tangent', [r]);
-var t4 = board.create('tangent', [s]);
-var a = board.create('point', [-3.0, 3.0],{name:'A'});
-var b = board.create('point', [3.0, 3.0],{name:'B'});
-var c = board.create('point', [3.0, -3.0],{name:'C'});
-var d = board.create('point', [-3.0,-3.0],{name:'D'});
-var l1 = board.create('segment', [p, r]);
-var l2 = board.create('segment', [b, d]);
+var t3 = board.create('tangent', [c]);
+var a = board.create('point', [3.2, 3.0],{name:'A'});
+var b = board.create('point', [2.8, -3.0],{name:'B'});
+var l2 = board.create('segment', [o,a]);
+var l3 = board.create('segment', [o,b]);
+
+// var r = board.create('glider', [0.0,-3.0,circle],{name:'R'});
+// var q = board.create('glider', [3.0,0.0,circle],{name:'Q'});
+// var p = board.create('glider', [0.0,3.0,circle],{name:'P'});
+// var s = board.create('glider', [-3.0,0.0,circle],{name:'S'});
+// var t1 = board.create('tangent', [p]);
+// var t2 = board.create('tangent', [q]);
+// var t3 = board.create('tangent', [r]);
+// var t4 = board.create('tangent', [s]);
+// var a = board.create('point', [-3.0, 3.0],{name:'A'});
+// var b = board.create('point', [3.0, 3.0],{name:'B'});
+// var c = board.create('point', [3.0, -3.0],{name:'C'});
+// var d = board.create('point', [-3.0,-3.0],{name:'D'});
+// var l1 = board.create('segment', [p, r]);
+// var l2 = board.create('segment', [b, d]);
+// var l2 = board.create('segment', [a, c]);
 </script>
 </body>
 </html>    

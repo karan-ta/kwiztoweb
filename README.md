@@ -18,3 +18,26 @@
         <text x="230" y="430" fill="orange">R</text>
         <!-- <text x="399" y="430" fill="orange">S</text>  -->
     </svg> 
+
+    <div  id = "proofstatements" class = "pullleft">
+       
+    <br/>
+    <br/>
+    AB = CD 
+    <br/>
+    and<br/> AD = BC 
+    <br/>
+    <span class = "smallertext">
+    So we need to prove that adjacent sides of ABCD are equal as well.
+    if we prove that AB = AD and CD = CB then all sides of ABCD are equal
+    and ABCD will be proved to be rhombus.
+</span>
+    <br/> 
+    AB = AP + PB 
+    <br/>
+    AD = AS + 
+</div>
+
+<div  id = "proofreasons" class = "pullleft">
+opposite sides of parallelogram ABCD
+</div>
